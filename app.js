@@ -40,12 +40,4 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-var port = 3001;
-app.listen(port, ()=>{
-	console.log("you make it till here");
-});
-app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The playgrounds Server Has Started!");
-});
-
 module.exports = app;
